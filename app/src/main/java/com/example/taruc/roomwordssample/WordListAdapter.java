@@ -33,6 +33,10 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
         }
     }
 
+    public Word getWordAtPosition (int position) {
+        return mWords.get(position);
+    }
+
     void setWords(List<Word> words){
         mWords = words;
         notifyDataSetChanged();
